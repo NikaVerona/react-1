@@ -1,0 +1,55 @@
+@media (min-width: 1024px) {
+  .container {
+    width: 960px;
+  }
+
+  .landing-heading {
+    width: 550px;
+  }
+
+  .services-grid {
+    grid-template-columns: 200px 200px 200px;
+  }
+
+  .specialist-list-item:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+
+  .specialist-list-item:nth-of-type(even) .specialist-details .specialist-name {
+    text-align: right;
+  }
+
+  .specialist-list-item:nth-of-type(even)
+    .specialist-details
+    .specialist-description {
+    text-align: right;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 30px;
+  }
+
+  .nav-item {
+    font-size: 16px;
+    font-weight: 400px;
+    cursor: pointer;
+  }
+
+  .nav-item a {
+    text-decoration: none;
+  }
+
+  .disabled-nav-item {
+    color: darkgray;
+    cursor: not-allowed;
+  }
+
+  .specialist-list-item {
+    flex-direction: row;
+  }
+
+  .footer-content {
+    flex-direction: row;
+  }
+}

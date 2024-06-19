@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: azure;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+.section-heading {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.brown-section {
+  background-color: rgb(22, 2, 2);
+}
+
+.white-heading {
+  color: white;
+}
+
+/*----HEADER----*/
+.header {
+  width: 100%;
+  padding: 10px;
+  background-color: bisque;
+
+  -webkit-box-shadow: -10px 8px 28px 12px rgba(66, 68, 90, 1);
+  -moz-box-shadow: -10px 8px 28px 12px rgba(66, 68, 90, 1);
+  box-shadow: -10px 8px 28px 12px rgba(66, 68, 90, 1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-box-shadow: -10px 8px 28px 12px rgba(66, 68, 90, 1);
+  -moz-box-shadow: -10px 8px 28px 12px rgba(66, 68, 90, 1);
+  box-shadow: -10px 8px 28px 12px rgba(66, 68, 90, 1);
+}
+
+.nav-links {
+  display: none;
+}
+
+/*---LANDING---*/
+.landing-section {
+  width: 100%;
+  height: calc(100vh - 70px);
+  position: relative;
+  background-image: url(landing-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.landing-content {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100vh - 70px);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.landing-flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.landing-heading {
+  font-size: 36px;
+  font-weight: 400;
+  width: 100%;
+}
+
+.landing-description {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.button {
+  width: fit-content;
+  padding: 15px 55px;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  background-color: transparent;
+  border: 4px solid white;
+  cursor: pointer;
+  transition: background-color 1s ease, color 0.3s;
+  text-decoration: none;
+}
+
+@media (hover: hover) {
+  .button:hover {
+    background-color: #fff;
+    color: black;
+  }
+  .text:hover {
+    color: #000;
+  }
+  .service-item:hover {
+    transform: scale(1.05);
+  }
+}
+
+.text {
+  color: white;
+}
+
+/*---SERVICES---*/
+.services-grid {
+  display: grid;
+  grid-template-columns: 200px;
+  justify-content: center;
+  gap: 50px;
+}
+
+.service-item {
+  padding: 15px;
+  width: 200px;
+  height: 200px;
+  background-color: aliceblue;
+  border: 1px solid darkgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s;
+}
+
+.service-item-new {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.service-item-new:hover {
+  background-color: blueviolet;
+}
+
+.new-service-dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 22px;
+  height: 22px;
+  background-color: orange;
+  border-radius: 50%;
+}
+
+.service-item-special-text {
+  font-size: 14px;
+}
+
+/*--- Specialists ---*/
+.specialist-list:nth-of-type(odd) {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.specialist-list-item {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  flex-direction: column;
+}
+
+.specialist-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.specialist-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.specialist-name {
+  font-weight: 700;
+}
+
+/*---Footer---*/
+
+.footer {
+  background-color: rgb(59, 38, 11);
+  padding: 25px 0;
+}
+
+.footer-content {
+  color: white;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-icon {
+  font-size: 30px;
+}
